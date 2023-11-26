@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+
+    <style>
+        /* Configuracoes globais do CSS */
+        * {
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            background-image: linear-gradient(360deg, rgb(43, 113, 226),rgb(73, 8, 250) , rgb(140, 0, 255))
+        }
+        h1 {
+            background-image: linear-gradient(60deg, rgb(74, 92, 255), rgb(77, 1, 255) 60%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>
