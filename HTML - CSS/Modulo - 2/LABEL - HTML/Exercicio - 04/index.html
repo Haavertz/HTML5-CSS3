@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../images/FavIcon.png" type="image/x-icon">
+    <title>Formulario</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+        }
+        main {
+            border-radius: 30px;
+            background-color: white;
+            display: block;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        fieldset > legend{
+            text-decoration: underline;
+        }
+        button {
+            background-color: #4CAF50;
+            align-items: center;
+            height: 2rem;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .Initial > legend{
+            font-style: normal;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Bem vindo ao Formulario</h1>
+        <fieldset class="Initial">
+            <legend>
+                Dados Pessoais
+            </legend>
+            <form action="send.php">
+                <fieldset id="Pessoais">
+                    <legend>
+                        Informaçôes Pessoais
+                    </legend>
+
+                    <label for="Fname" id="Fname">Digite seu Nome</label> <br>
+                    <input type="text" id="Fname" required size="24" > <br>
+                    
+                    <label for="Fsobrenome" id="Fsobrenome">Digite seu Sobrenome</label> <br>
+                    <input type="text" id="Fsobrenome" required size="24"> <br>
+                    
+                    <label for="Ftelefone" id="Ftelefone">Digite seu Telefone</label> <br>
+                    <input type="number" id="Ftelefone" required size="24"> <br>
+                    
+                    <label for="Fsenha" id="fname">Digite seu Email</label> <br>
+                    <input type="email" id="fname" required size="24"> <br>
+                    
+                    <label for="Fsenha" id="fname">Digite sua Senha</label> <br>
+                    <input type="password" id="fname" required size="24"> <br>
+                        
+                </fieldset>
+                    <br>
+                <fieldset>
+                    <legend>
+                        Endereço
+                    </legend>
+
+                    <label for="Fcep" id="fcep">Digite seu Cep</label> <br>
+                    <input type="password" id="Fcep" required size="24"> <br>
+
+                    <label for="Frua" id="Frua">Digite sua Rua</label> <br>
+                    <input type="text" id="Frua" required size="24"> <br>
+                    
+                    <label for="Fnumber" id="Fnumber">Digite seu Numero</label> <br>
+                    <input type="text" id="Fnumber" required size="24"> <br>
+                    
+                    <label for="Fcomplemento" id="Fcomplemento">Digite seu Complemento</label> <br>
+                    <input type="password" id="Fcomplemento" required size="24"> <br>
+                    
+                    <label for="Fbairro" id="Fbairro">Digite seu Bairro</label> <br>
+                    <input type="password" id="Fbairro" required size="24"> <br>
+                    
+                </fieldset>
+                <br>
+                <fieldset>
+                    
+                    <legend>
+                        Dados Financeiros
+                    </legend>
+
+                    <label for="Fsenha" id="frua">Receita Anual</label> <br>
+                    <input type="number" id="fname" required size="24"> <br>
+
+                    <label for="Frua" id="frua">Lucro Liquido</label> <br>
+                    <input type="number" id="fname" required size="24"> <br>
+                    
+                    <label for="Fsobrenome" id="frua">Numero de Funcionário</label> <br>
+                    <input type="number" id="fname" required size="24"> <br>
+                    
+                    <label for="Fsenha" id="frua">Investimento Inicial</label> <br>
+                    <input type="number" id="fname" required size="24"> <br>
+                    
+                    <label for="Fsenha" id="frua">Retorno de Investimento</label> <br>
+                    <input type="number" id="fname" required size="24"> <br>
+                    
+                </fieldset>
+                <br>
+                <fieldset>
+
+                    <legend>
+                        Dados Comerciais
+                    </legend>
+
+                    <label for="Fsenha" id="frua">Receita Anual</label> <br>
+                    <input type="number" id="fname" required size=""> <br>
+
+                    <label for="Frua" id="frua">Lucro Liquido</label> <br>
+                    <input type="number" id="fname" required size="24"> <br>
+                    
+                    <label for="Fsobrenome" id="frua">Numero de Funcionário</label> <br>
+                    <input type="number" id="fname" required size="24"> <br>
+                    
+                    <label for="Fsenha" id="frua">Investimento Inicial</label> <br>
+                    <input type="number" id="fname" required size="24"> <br>
+                    
+                    <label for="Fsenha" id="frua">Retorno de Investimento</label> <br>
+                    <input type="number" id="fname" required size="24"> <br>
+                    
+                </fieldset>
+
+                <button>Enviar</button>
+            </form>
+        </fieldset> 
+    </main>
+</body>
+</html>

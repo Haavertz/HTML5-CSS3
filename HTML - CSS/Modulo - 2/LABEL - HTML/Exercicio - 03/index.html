@@ -8,38 +8,76 @@
 </head>
 <body>
     <h1 type="Titulo">Qual sua linguagem Preferida: </h1>
+    <fieldset>
+        <legend>Chekins</legend>
+        <form>
+    
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html"> HTML </label> <br>
+            
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css"> CSS </label> <br>
+            
+            <input type="radio" id="javascript" name="fav_language" value="JAVASCRIPT">
+            <label for="javascript"> JAVASCRIPT </label> <br>
+    
+            <button> Enviar </button> <br> <br>
+            
+    
+            <input type="checkbox" id="html2" name="fav_language" value="HTML">
+            <label for="html2"> HTML </label> <br>
+            
+            <input type="checkbox" id="css2" name="fav_language" value="CSS">
+            <label for="css2"> CSS </label> <br>
+            
+            <input type="checkbox" id="javascript2" name="fav_language" value="JAVASCRIPT">
+            <label for="javascript2"> JAVASCRIPT </label> <br>
+    
+            <button> Enviar </button> <br> <br>
+            
+            <input type="submit" id="html3" name="fav_language" value="HTML"> <br>
+            
+            <input type="submit" id="css3" name="fav_language" value="CSS"> <br>
+            
+            <input type="submit" id="javascript3" name="fav_language" value="JAVASCRIPT"> <br>
+            <br>
+    
+        </form>
+    </fieldset>
+    <br>
+    <form>
+        <fieldset id="pessoal">
+            <legend>Dados Pessoais</legend>
+            <p>
+                Nome:
+                <input type="text" name="texto" id="campot" size="20" maxlength="20" placeholder="Nome completo">
+            </p>
+        </fieldset>
+    </form>
 
     <form>
-
-        <input type="radio" id="html" name="fav_language" value="HTML">
-        <label for="html"> HTML </label> <br>
-        
-        <input type="radio" id="css" name="fav_language" value="CSS">
-        <label for="css"> CSS </label> <br>
-        
-        <input type="radio" id="javascript" name="fav_language" value="JAVASCRIPT">
-        <label for="javascript"> JAVASCRIPT </label> <br>
-
-        <button> Enviar </button> <br> <br>
-        
-
-        <input type="checkbox" id="html2" name="fav_language" value="HTML">
-        <label for="html2"> HTML </label> <br>
-        
-        <input type="checkbox" id="css2" name="fav_language" value="CSS">
-        <label for="css2"> CSS </label> <br>
-        
-        <input type="checkbox" id="javascript2" name="fav_language" value="JAVASCRIPT">
-        <label for="javascript2"> JAVASCRIPT </label> <br>
-
-        <button> Enviar </button> <br> <br>
-        
-        <input type="submit" id="html3" name="fav_language" value="HTML"> <br>
-        
-        <input type="submit" id="css3" name="fav_language" value="CSS"> <br>
-        
-        <input type="submit" id="javascript3" name="fav_language" value="JAVASCRIPT"> <br>
-
+        <fieldset id="email">
+            <legend>E-mail</legend>
+            <p>Email: <input type="email" name="email" id="campoe" size="20" maxlength="30" placeholder="exemplo@exemplo.com" required></p>
+            <button>Enviar</button>
+        </fieldset>
     </form>
+
+    <form>
+        <fieldset id="senha">
+            <legend>E-mail</legend>
+            <p>Senha: <input type="password" name="senha" id="senha" size="20" maxlength="30" placeholder="Sua senha..." required></p>
+            <button>Enviar</button>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset id="date">
+            <legend>E-mail</legend>
+            <p>Calendário: <input type="date" name="date" id="date" size="20" maxlength="30" placeholder="Seu Email..." required></p>
+            <button>Enviar</button>
+        </fieldset>
+    </form>
+
 </body>
 </html>
