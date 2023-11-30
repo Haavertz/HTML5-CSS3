@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../images/FavIcon.png" type="image/x-icon">
+    <title>Grouping Tags</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        div {
+            width: 300px;
+            height: 300px;
+
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 0px;
+            margin-left: auto;        
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+        }
+
+
+        nav {
+            background-color: gray;
+            border-radius: 1.1rem;
+            text-align: center;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            margin: 1.3rem;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            text-decoration-color: rgb(10, 81, 204)
+
+        }
+
+        main {
+            background-color: white;
+        }
+
+        button {
+            width: 100%;
+            color: white;
+            background-color: #4CAF50;
+        }
+
+        button > a {
+            text-decoration: none;
+            color: white;
+        }
+
+        div#buttoin {
+            height: 100%;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(171, 158, 158);
+            padding: 5px;
+        }
+
+        section#assuntos > p {
+            text-align: center;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 0px;
+            margin-left: auto;
+
+        }
+
+        footer > a {
+            display: none;
+        }
+
+        footer:hover > a{
+            display: block;
+            font-weight: bold;
+            text-decoration: none;
+            font-style: italic;
+            color: white;
+            background-color: black;
+        }
+
+        footer > a:hover {
+            text-decoration: underline;
+            text-decoration-color: blue;
+        }
+
+        header::before  > a{
+            content: "> ";
+        }
+
+    </style>
+
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Meu Site</h1>
+            <nav>
+                <a href="https://github.com/Haavertz" target="_blank">Link</a>
+                <a href="https://github.com/Haavertz" target="_blank">Link</a>
+                <a href="https://github.com/Haavertz" target="_blank">Link</a>
+                <a href="https://github.com/Haavertz" target="_blank">Link</a>
+                <a href="https://github.com/Haavertz" target="_blank">Link</a>
+                <a href="https://github.com/Haavertz" target="_blank">Link</a>
+            </nav>
+        </header>
+        <main>
+            <section id="assuntos">
+                <p>Esportes Politica Tecnologia</p>
+            </section>
+            <section id="noticias">
+                <article>
+                    <h2>Noticiais sobre o Brasil</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum eius magni adipisci enim natus consectetur autem reiciendis porro maiores, deserunt minima praesentium ipsam dolore iure cum animi facilis non esse!</p>
+                    <aside>
+                        <p>Artigo escrito por José da Silva</p>
+                    </aside>
+                </article>
+                <div id="buttoin">
+                    <form>
+                        <button> <a href="https://github.com/Haavertz" target="_blank">Pesquisar</a></button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Desenvolvido por mim Haavertz(Gleison)</p>
+            <a href="https://github.com/Haavertz" target="_blank">Meu GitHub</a>
+        </footer>
+    </div>
+</body>
+</html>
