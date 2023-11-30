@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../images/FavIcon.png" type="image/x-icon">
+    <title>Formulario</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+        }
+        main {
+            border-radius: 30px;
+            background-color: white;
+            display: block;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        fieldset > legend{
+            text-decoration: underline;
+        }
+
+        button {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            align-items: center;
+            height: 2rem;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .Initial > legend{
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        fieldset {
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Bem vindo ao Formulario</h1>
+        <fieldset class="Initial">
+            <legend>
+                Dados Pessoais
+            </legend>
+            <form action="send.php">
+                <fieldset id="Pessoais">
+                    <legend>
+                        Informaçôes Pessoais
+                    </legend>
+
+                    <label for="Fname" id="Fname">Digite seu Nome</label> <br>
+                    <input type="text" id="Fname" required size="24" > <br>
+                    
+                    <label for="Fsobrenome" id="Fsobrenome">Digite seu Sobrenome</label> <br>
+                    <input type="text" id="Fsobrenome" required size="24"> <br>
+                    
+                    <label for="Ftelefone" id="Ftelefone">Digite seu Telefone</label> <br>
+                    <input type="number" id="Ftelefone" required size="24"> <br>
+                    
+                    <label for="Fsenha" id="fname">Digite seu Email</label> <br>
+                    <input type="email" id="fname" required size="24"> <br>
+                    
+                    <label for="Fsenha" id="fname">Digite sua Senha</label> <br>
+                    <input type="password" id="fname" required size="24"> <br>
+                        
+                </fieldset>
+                    <br>
+                <fieldset>
+                    <legend>
+                        Endereço
+                    </legend>
+
+                    <label for="Fcep" id="fcep">Digite seu Cep</label> <br>
+                    <input type="number" id="Fcep" required size="24"> <br>
+
+                    <label for="Frua" id="Frua">Digite sua Rua</label> <br>
+                    <input type="text" id="Frua" required size="24"> <br>
+                    
+                    <label for="Fnumber" id="Fnumber">Digite seu Numero</label> <br>
+                    <input type="number" id="Fnumber" required size="24"> <br>
+                    
+                    <label for="Fcomplemento" id="Fcomplemento">Digite seu Complemento</label> <br>
+                    <input type="number" id="Fcomplemento" required size="24"> <br>
+                    
+                    <label for="Fbairro" id="Fbairro">Digite seu Bairro</label> <br>
+                    <input type="text" id="Fbairro" required size="24"> <br>
+                    
+                </fieldset>
+                <br>
+                <fieldset>
+                    
+                    <legend>
+                        Dados Financeiros
+                    </legend>
+
+                    <label for="Fsenha" id="frua">Receita Anual</label> <br>
+                    <input type="number" id="freceita" required size="24"> <br>
+
+                    <label for="Frua" id="frua">Lucro Liquido</label> <br>
+                    <input type="number" id="flucro" required size="24"> <br>
+                    
+                    <label for="Fsobrenome" id="frua">Numero de Funcionário</label> <br>
+                    <input type="number" id="ffuncionario" required size="24"> <br>
+                    
+                    <label for="Fsenha" id="frua">Investimento Inicial</label> <br>
+                    <input type="number" id="finvestimento" required size="24"> <br>
+                    
+                    <label for="Fsenha" id="frua">Retorno de Investimento</label> <br>
+                    <input type="number" id="fretorno" required size="24"> <br>
+                    
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>
+                        Dados Comerciais
+                    </legend>
+                
+                    <label for="receitaAnualComercial">Receita Anual</label> <br>
+                    <input type="number" id="receitaAnualComercial" required size=""> <br>
+                
+                    <label for="lucroLiquidoComercial">Lucro Líquido</label> <br>
+                    <input type="number" id="lucroLiquidoComercial" required size="24"> <br>
+                
+                    <label for="numFuncionariosComercial">Número de Funcionários</label> <br>
+                    <input type="number" id="numFuncionariosComercial" required size="24"> <br>
+                
+                    <label for="investimentoInicialComercial">Investimento Inicial</label> <br>
+                    <input type="number" id="investimentoInicialComercial" required size="24"> <br>
+                
+                    <label for="retornoInvestimentoComercial">Retorno de Investimento</label> <br>
+                    <input type="number" id="retornoInvestimentoComercial" required size="24"> <br>
+                </fieldset>                
+                    <br>                
+                <fieldset>
+                    <legend>
+                        Cadastro Veiculo
+                    </legend>
+                
+                    <label for="documentoVeiculo" id="documentoVeiculo">Digite a Documentação</label> <br>
+                    <input type="text" id="documentoVeiculo" required size=""> <br>
+                
+                    <label for="modeloVeiculo" id="modeloVeiculo">Digite o Modelo do Veículo</label> <br>
+                    <input type="number" id="modeloVeiculo" required size="24"> <br>
+                
+                    <label for="numFuncionariosVeiculo" id="numFuncionariosVeiculo">Data do Veiculo</label> <br>
+                    <input type="date" id="numFuncionariosVeiculo" required size="24"> <br>
+                
+                    <label for="investimentoInicialVeiculo" id="investimentoInicialVeiculo">Investimento Inicial</label> <br>
+                    <input type="number" id="investimentoInicialVeiculo" required size="24"> <br>
+                
+                    <label for="retornoInvestimentoVeiculo" id="retornoInvestimentoVeiculo">Retorno de Investimento</label> <br>
+                    <input type="number" id="retornoInvestimentoVeiculo" required size="24"> <br>                    
+                </fieldset>
+                    <br>
+                <fieldset>
+                    <legend>
+                        Dados Cônjuge
+                    </legend>
+                
+                    <label for="conjugeQuantidade" id="conjugeQuantidade">Quantidade de Cônjuges</label> <br>
+                    <input type="number" id="conjugeQuantidade" size="24" required> <br>
+                
+                    <label for="conjuge1Nome" id="conjuge1Nome">Nome do Primeiro Cônjuge</label> <br>
+                    <input type="text" id="conjuge1Nome" size="24" required> <br>
+                
+                    <label for="conjuge1Telefone" id="conjuge1Telefone">Telefone do Primeiro Cônjuge</label> <br>
+                    <input type="number" id="conjuge1Telefone" size="24" required> <br>
+                
+                    <label for="conjuge2Nome" id="conjuge2Nome">Nome do Segundo Cônjuge</label> <br>
+                    <input type="text" id="conjuge2Nome" size="24" required> <br>
+                
+                    <label for="conjuge2Telefone" id="conjuge2Telefone">Telefone do Segundo Cônjuge</label> <br>
+                    <input type="number" id="conjuge2Telefone" size="24" required> <br>
+                
+                    <label for="conjuge3Nome" id="conjuge3Nome">Nome do Terceiro Cônjuge</label> <br>
+                    <input type="text" id="conjuge3Nome" size="24" required> <br>
+                
+                    <label for="conjuge3Telefone" id="conjuge3Telefone">Telefone do Terceiro Cônjuge</label> <br>
+                    <input type="number" id="conjuge3Telefone" size="24" required> <br>
+                                
+                </fieldset>
+                
+                <br>
+
+                <fieldset>
+                    <legend>
+                        Dados Filhos
+                    </legend>
+                
+                    <label for="qtdFilhos" id="qtdFilhos">Quantidade de Filhos</label> <br>
+                    <input type="number" id="qtdFilhos" size="24" required> <br>
+                
+                    <label for="filho1Nome" id="filho1Nome">Nome do Primeiro Filho</label> <br>
+                    <input type="text" id="filho1Nome" size="24" required> <br>
+                                
+                    <label for="filho2Nome" id="filho2Nome">Nome do Segundo Filho</label> <br>
+                    <input type="text" id="filho2Nome" size="24" required> <br>
+                
+                                
+                    <label for="filho3Nome" id="filho3Nome">Nome do Terceiro Filho</label> <br>
+                    <input type="text" id="filho3Nome" size="24" required> <br>
+                
+                    <label for="filho4Nome" id="filho4Nome">Nome do Quarto Filho</label> <br>
+                    <input type="text" id="filho4Nome" size="24" required> <br>
+                                
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>
+                        Dados Formação Escolar
+                    </legend>
+                
+                    <label for="grauEscolaridade">Grau de Escolaridade</label> <br>
+                    <input type="text" id="grauEscolaridade" required size="24"> <br>
+                
+                    <label for="cursoFormacao">Curso de Formação</label> <br>
+                    <input type="text" id="cursoFormacao" required size="24"> <br>
+                
+                    <label for="instituicaoFormacao">Instituição de Formação</label> <br>
+                    <input type="text" id="instituicaoFormacao" required size="24"> <br>
+                
+                    <label for="anoConclusao">Ano de Conclusão</label> <br>
+                    <input type="number" id="anoConclusao" required size="4"> <br>
+                </fieldset>
+                
+                <button>Enviar</button>
+            </form>
+        </fieldset> 
+    </main>
+</body>
+</html>
