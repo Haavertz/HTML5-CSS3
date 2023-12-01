@@ -4,8 +4,7 @@
 body {
     padding: 0px;
     margin: 0px;
-    font-family: 'Intel', sans-serif;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .page {
@@ -22,11 +21,77 @@ body {
 }
 
 .card {
-    border-radius: 30px;
+    border-radius: 16px;
     background-color: white;
-    height: 240px;
-    width: 450px;
-    padding: 35px;
+    padding: 30px;
     box-shadow: 0px 0px 20px 12px rgba(0,0,0,0.3) ;
 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo {
+    padding: 15px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    transition: all linear 200ms;
+    font-size: 0.9em;
+    color: #444;
+    margin-bottom: 3px;
+    outline: none;
+
+}
+
+.campo::placeholder {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.campo:focus {
+    border-color: #ff05b4;
+
+}
+
+.link {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+#btn {
+    color: white;
+    padding: 15px;
+    margin-top: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+    background-color: #ff05b4;
+    cursor: pointer;
+    transition: all linear 190ms;
+ 
+}
+
+#btn:hover {
+    transform: scale(1.04);
+    background-color: #c404a1;
+
+}
+
+p {
+    font-size: 1.28em;
 }

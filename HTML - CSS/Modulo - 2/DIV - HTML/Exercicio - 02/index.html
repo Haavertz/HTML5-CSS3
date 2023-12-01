@@ -8,23 +8,23 @@
     <title>Login Screen</title>
 </head>
 <body>
-    <div class="page">
-        <div class="card">
-            <form>
-                <h2>Login</h2>
-                
-                <p>Digite seus dados para acessar.</p>
-                <input type="email" placeholder="Digite seu e-mail">
-                <input type="password" placeholder="Digite sua senha">
-                <a href="#">Forgot Password</a>
-
-                <button>Login</button>
-
-                <input type="submit" value="Acessar">
-                <p>I don't have an account? <a href="#">Create now.</a></p>
-
-            </form>
+    <main>
+        <div class="page">
+            <div class="card">
+                <form>
+                    <h2>Login</h2>
+                    
+                    <p>Digite seus dados para acessar.</p>
+                    <input class="campo" type="email" placeholder="Digite seu e-mail" required>
+                    <input class="campo" type="password" placeholder="Digite sua senha" required>
+                    <a class="link" href="#">Forgot Password</a>
+        
+                    <input id="btn" type="submit" value="Login">
+                    <p>I don't have an account? <a href="#">Create now.</a></p>
+    
+                </form>
+            </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>
