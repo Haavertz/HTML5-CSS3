@@ -16,7 +16,7 @@ body {
     height: 100vh;
     background-color: red;
     background: rgb(255,5,180);
-    background: linear-gradient(153deg, rgba(255,5,180,1) 0%, rgba(83,0,242,1) 100%)
+    background: linear-gradient(153deg, #ff05b4 0%, #5300f2 100%)
 
 }
 
@@ -47,16 +47,17 @@ form {
 }
 
 .campo::placeholder {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #666;
 }
 
 .campo:focus {
-    border-color: #ff05b4;
+    border-color: #5300f2;
 
 }
 
 .link {
+    font-size: 15px;
     margin-top: 10px;
     margin-bottom: 0px;
     text-decoration: none;
@@ -64,6 +65,7 @@ form {
 }
 
 a {
+    color: #5300f2;
     text-decoration: none;
 
 }
@@ -77,10 +79,11 @@ a:hover {
     color: white;
     padding: 15px;
     margin-top: 15px;
+    margin-bottom: 0px;
     font-weight: 600;
     border: none;
     border-radius: 7px;
-    background-color: #ff05b4;
+    background-color: #5300f2;
     cursor: pointer;
     transition: all linear 190ms;
  
@@ -88,10 +91,27 @@ a:hover {
 
 #btn:hover {
     transform: scale(1.04);
-    background-color: #c404a1;
+    background-color: #4804c7;
 
 }
 
 p {
-    font-size: 1.28em;
+    font-size: 1.1em;
+
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+#createcont {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: 16px;
+
 }
