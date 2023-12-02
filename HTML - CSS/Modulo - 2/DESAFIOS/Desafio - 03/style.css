@@ -99,12 +99,19 @@ h2 {
 }
 
 main {
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     margin: 0px;
     padding: 0px;
 }
 
-.groupimage > img{
+.groupimage > picture > img{
     display: inline-block;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
 
 }
 
