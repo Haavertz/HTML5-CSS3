@@ -3,6 +3,7 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0px;
+    text-align: justify;
 }
 
 header {
@@ -15,9 +16,98 @@ header {
 
 }
 header > h1 {
+    color: #b6ef79;
     font-family: 'MontSerrat';
     font-weight: lighter;
     font-size: 2.3rem;
     margin: 0px;
     padding: 0px;
+
+}
+header > p {
+    color: #ffffff;
+    padding: 0px;
+
+}
+
+#barradelinks {
+    padding-top: 30px;
+    padding-right: 325px;
+
+}
+
+#barradelinks > a{
+    color: white;
+    margin: 2.5px;
+
+}
+
+#barradelinks > a {
+    text-decoration: none;
+    font-style: normal;
+}
+
+#link1:hover {
+    text-decoration: underline;
+    color: #fffb00;
+    text-decoration-color: #b6ef79;   
+}
+
+#link2:hover {
+    text-decoration: underline;
+    color: #fffb00;
+    text-decoration-color: #b6ef79;
+}
+
+#link3:hover {
+    text-decoration: underline;
+    color: #fffb00;
+    text-decoration-color: #b6ef79;
+}
+
+footer {
+    margin-top: 0px;
+    text-align: center;
+    height: 30px;
+    background: linear-gradient(90deg, #214ee1a0, #b16ab354);
+
+}
+
+footer > div > p {
+    margin: 0px;
+    padding: 5px;
+}
+
+#conteudo {
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+h2 {
+    color: #e2df2d;
+    padding: 0px;
+    margin: 0px;
+}
+
+#conteudo {
+    background-color: white;
+}
+
+main {
+    margin: 0px;
+    padding: 0px;
+}
+
+.groupimage > img{
+    display: inline-block;
+
+}
+
+.groupimage {
+    padding-top: 30px;
 }
