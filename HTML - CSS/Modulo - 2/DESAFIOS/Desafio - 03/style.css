@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0px;
+}
+
+header {
+    height: 150px;
+    text-align: center;
+    background: linear-gradient(90deg, #214de1, #b06ab3);
+    margin: 0px;
+    padding-top: 2.5rem;
+    outline: 0px;
+
+}
+header > h1 {
+    font-family: 'MontSerrat';
+    font-weight: lighter;
+    font-size: 2.3rem;
+    margin: 0px;
+    padding: 0px;
+}

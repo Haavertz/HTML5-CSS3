@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    
+    <link rel="shortcut icon" href="../images/FavIcon.png" type="image/x-icon">
+    <title>Login Screen</title>
+</head>
+<body>
+
+    <main>
+        <div class="page">
+            <div class="card">
+                <form onsubmit="return validateForm()">
+                    <h2>Login</h2>
+                    
+                    <p>Enter your details to access:</p>
+                    <input class="campo" type="email" id="email" placeholder="Digite seu e-mail" required>
+                    <input class="campo" type="password" id="password" placeholder="Digite sua senha" required>
+                    <a class="link" href="#">Forgot Password</a>
+                    <input id="btn" type="submit" value="Login">
+                    
+                    <p id="createcont">I don't have an account? <a href="#">Create now.</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if (email === "login@gmail.com" && password === "123") {
+                window.location.href = '../index.html';
+                return false;
+            } else {
+                alert("Credenciais inválidas. Por favor, tente novamente.");
+                return false; 
+            }
+        }
+    </script>
+</body>
+</html>
