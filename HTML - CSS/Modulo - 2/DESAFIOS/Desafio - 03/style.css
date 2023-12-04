@@ -75,7 +75,6 @@ footer {
 
 footer > div > p {
     margin: 0px;
-    padding: 5px;
 }
 
 #conteudo {
@@ -95,7 +94,10 @@ h2 {
 }
 
 #conteudo {
+    padding: 30px;
+    border-radius: 2px;
     background-color: white;
+
 }
 
 main {
@@ -105,9 +107,12 @@ main {
     justify-content: center;
     margin: 0px;
     padding: 0px;
+    background: linear-gradient(90deg, #214de1, #b06ab3);
+
 }
 
 .groupimage > picture > img{
+
     display: inline-block;
     align-content: center;
     justify-items: center;
@@ -115,6 +120,37 @@ main {
 
 }
 
-.groupimage {
-    padding-top: 30px;
+
+footer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #214ee1a0, #b16ab354);
+    padding: 10px;
+}
+
+
+.imgicon {
+    display: flex;
+}
+
+footer > div {
+
+    text-align: center;
+    margin: 0px;
+    padding-left: 40px;
+    text-align: center;
+
+}
+
+.imgicon img {
+
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 10px; 
+    border-radius: 6px;
+
 }
