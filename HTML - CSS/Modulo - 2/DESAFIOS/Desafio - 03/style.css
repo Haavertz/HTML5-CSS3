@@ -78,6 +78,7 @@ footer > div > p {
 }
 
 #conteudo {
+    
     display: inline-block;
     align-items: center;
     align-content: center;
@@ -154,3 +155,9 @@ footer > div {
     border-radius: 6px;
 
 }
+
+.imagem-container {
+    text-align: center;
+    
+  }
+  
