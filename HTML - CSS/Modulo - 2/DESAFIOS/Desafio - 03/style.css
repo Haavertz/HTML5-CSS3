@@ -89,7 +89,7 @@ footer > div > p {
 }
 
 h2 {
-    color: #e2df2d;
+    background: linear-gradient(40deg, #e2df2d74, white);
     padding: 0px;
     margin: 0px;
 }
@@ -159,5 +159,14 @@ footer > div {
 .imagem-container {
     text-align: center;
     
-  }
-  
+}
+
+#video {
+    padding: 0px;
+    margin: 0;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
