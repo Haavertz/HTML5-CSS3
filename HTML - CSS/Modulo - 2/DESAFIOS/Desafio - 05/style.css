@@ -47,19 +47,21 @@ main {
 }
 
 .container_center {
+    overflow: hidden;
     background-color: white;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.433);
     width: 40%;
 }
 
 h2 {
-    color: #1d4f34;
+    color: #215a3c;
     font-size: 1.7rem;
     font-family: "IDroid";
     margin-bottom: 10px;
 }
 
 h3 {
+    font-family: "IDroid";
     font-size: 1.5rem;
     color: #256542;
     background: linear-gradient(90deg, #3cdb842e, white );
@@ -76,6 +78,12 @@ h3 {
 #center_container_content p {
     text-align: justify;
     padding: 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#center_container_content p a{
+    text-decoration: none;
+    color: #256542;
+    font-weight: bolder;
 }
 
 footer {
