@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.cdnfonts.com/css/idroid');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
 
 * {
     padding: 0px;
@@ -68,6 +69,32 @@ h3 {
     background: linear-gradient(90deg, #3cdb842e, white );
 }
 
+abbr {
+    border-bottom: 1px dashed #000; 
+    cursor: help; 
+}
+
+.main_container_content {
+    padding: 30px 0;
+}
+
+.title {
+    background-color: #2fa866;
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+    border-radius: 15px 15px 5px 5px;
+    padding: 10px;
+}
+
+.tu_container2 {
+    display: flex;
+
+    font-size: 16px;
+    font-family: "Public Sans Web";
+    font-weight: 400;
+}
+
 #navigater:hover {
     background-color: #16a154;
     text-decoration: none;
@@ -78,6 +105,17 @@ h3 {
     display: flex;
     justify-content: center;
 }
+
+.tu_container {
+    padding: 0px 20px;
+    background-color: #c5ebd6;
+}
+
+#option {
+    padding: 0px 0px 0px 220px;
+    
+}
+
 
 #video_back {
     height: 100%;
