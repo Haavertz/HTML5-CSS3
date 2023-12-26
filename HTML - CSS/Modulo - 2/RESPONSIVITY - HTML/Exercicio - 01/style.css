@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: gray;
+}
+
+body div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+    text-align: justify;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
