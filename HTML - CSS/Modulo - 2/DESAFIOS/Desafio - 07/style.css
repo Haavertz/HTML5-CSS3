@@ -68,3 +68,9 @@ main {
     
     margin: 25vh 0;
 }
+
+.container_final {
+    font-size: 2.2rem;
+    font-family: var(--font-destaque);
+    padding: var(--pandding-font);
+}
