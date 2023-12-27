@@ -93,6 +93,13 @@ abbr {
     cursor: help; 
 }
 
+main p {
+    line-height: 25px;
+}
+
+main a {
+    padding: 2px 6px;
+}
 
 .main_container_content {
     padding: 30px 0;
@@ -107,12 +114,12 @@ abbr {
     padding: 10px;
 }
 
-.tu_container2 {
-    display: flex;
-
-    font-size: 16px;
+.tu_container ul {
+    max-width: 650px;
+    list-style-position: inside;
+    font-size: 15px;
     font-family: "Public Sans Web";
-    font-weight: 400;
+    columns: 2;
 }
 
 #navigater:hover {
@@ -131,10 +138,6 @@ abbr {
     background-color: #c5ebd6;
 }
 
-#option {
-    padding: 0px 0px 0px 220px;
-    
-}
 
 #video_back {
     height: 100%;
