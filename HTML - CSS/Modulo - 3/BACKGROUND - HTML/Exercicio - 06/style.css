@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    /* background-image: url(Midia/wallpaper002.jpg);
+    background-color: black;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+
+    /* ShortHeand - BackGround*/
+
+    /* color > image > position > repeat > attachment  */
+
+    /* Ficaria desta maneira */
+
+    background: black url(Midia/wallpaper002.jpg) center top no-repeat fixed;
+    background-size: cover;
+
+
+
+    
+    /* background-size: 100% 100%; */
+    /* Com porcentagem ja diz tudo ele vai se adaptar ao tamanho da tela porem ele vai prejudica a imagem pra caramba, não muito recomendado mas ainda pode ser util as vezes. */
+    
+    /* background-size: cover; */
+    /* Este por si só e o melhor pois ele vai cobrir toda a tela mas vai picotar a iamgem caso necessario mantendo assim a qualidade da imagem sem prejudica-la. */
+    
+    /* background-size: contain; */ 
+    /* Basicamente ele deixa 100% porem ele cria barras laterais, caso diminua a altura ele cria barra vertical e se diminuir a largura ele cria barra horizontal */
+
+    /* background-size: auto;*/ 
+    /*Basicamente ele deixa automatico */
+}
+main {
+    background-color: white;
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid yellow;
+    border-radius: 15px;
+    text-align: justify;
+}
