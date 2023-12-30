@@ -1,76 +1,123 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&family=Sriracha&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Public+Sans:wght@100&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Public+Sans:wght@100&family=Sriracha&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 
 }
 
 :root {
-    --color-font: white;
+    --font-destaque: "Passion One";
+    --font-links: "Verdana", "Geneva";
+    --font-paragrafos: 'Sriracha', cursive;
+}
 
-    --font-padrao: "Passion One", sans-serif;
-    --font-destaque: "Sriracha", sans-serif;
-    --pandding-font: 50px;
+body {
+    height: 100vh;
+}
 
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 header {
-    background-color: #000000;
+    background-color: black;
+    color: white;
     text-align: center;
-    color: white;
-    padding: 20px;
-    font-size: 1.5rem;
+    font-weight: bolder;
 }
 
-
-h1 {
+header h1{
+    padding-top: 50px;
+    font-variant: small-caps;
     font-family: var(--font-destaque);
-    font-size: 2.5rem;
-
+    font-size: 10vw;
 }
 
-main {
-    padding: var(--pandding-font);
-    font-family: var(--font-padrao);
+header a {
+
+    font-weight: bold;
+    font-family: var(--font-links);
 }
 
-.container_flor {
+a:visited {
+    color: white;
+
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+header p {
+    font-size: 13px;
+    
+}
+
+main p{
+    font-size: 47.81px;
+    font-family: var(--font-paragrafos);
+    padding: 65.100px 0 65.100px 30px;
+}
+
+.container_image_flor {
+    background-color: black;
     background-image: url(midia/imagens/background001.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    background-position: center;
-    height: 100vh;
-
-    padding: var(--pandding-font); 
 }
 
-.container_1 {
-    font-size: 2.2rem;
-    text-align: justify;
-    font-family: var(--font-destaque);
-}
-
-.container_content {
-    background-color: rgba(0, 0, 0, 0.079);
-    font-size: 2.2rem;
-    text-align: justify;
-    width: 23vw;
-    font-family: var(--font-destaque);
+.text_container_flor p{
+    line-height: 2em;
+    font-size: 52.81px;
+    padding: 5px;
+    margin: 65.100px 0 65.100px 30px;
+    display: inline-block;
     color: white;
-    
+    background-color: #00000083;
+    text-shadow: 1px 1px 0px black;
+
 }
 
-
-.container_flor div{
-    
-    margin: 25vh 0;
+.container_image_livro {
+    background-color: black;
+    background-image: url(midia/imagens/background002.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.container_final {
-    font-size: 2.2rem;
-    font-family: var(--font-destaque);
-    padding: var(--pandding-font);
+.text_container_livro p{
+    line-height: 2em;
+    font-size: 52.81px;
+    padding: 5px;
+    margin: 65.100px 0 65.100px 30px;
+    display: inline-block;
+    color: white;
+    background-color: #00000083;
+    text-shadow: 1px 1px 0px black;
+
+}
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-size: 13px;
+    font-family: var(--font-links);
+}
+
+footer p {
+    padding: 10px;
 }
