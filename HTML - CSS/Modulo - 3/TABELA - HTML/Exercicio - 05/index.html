@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Zebrado</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            margin: auto;
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border-radius: 10px 10px 0 0;
+        }
+
+        thead tr th {
+            background-color: #383838;
+            color: white;
+        }
+
+        /* Utilizando uma pseudo classe para deixa com o efeito zebrado para ajudar com as coisas. */
+
+        /* Basicamente aqui ele vai pular de 2 e no segundo ele vai aplicar o efeito, podemos fazer com ODD para pegar apenas os impares. Caso eu tire o n do 2n ele vai pega apenas no segundo, com o n ele vai procurar uma sequencia*/
+
+        tbody tr:nth-child(odd) { /* 2n - 1 */
+            background-color: lightgray;
+            font-weight: 200;
+        }
+
+        /* O even e a mesma coisa que o odd porem ele vai pegar apenas os pares */
+
+        tbody tr:nth-child(even) { /* 2n */
+            background-color: lightcyan;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes e Efeito Zebrado</h1>
+
+    <!-- Anatomia de tabelas grandes  -->
+
+    <!-- TABLE 
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH -->
+
+        <!-- TH seria os titulos e TD serao os dados -->
+
+    <table>
+        <!-- Legenda da tabela -->
+        <caption>Populacao das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Populacao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>3 302 729</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td>1 581 196</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>2 210 004</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td>1 511 460</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>3 271 199</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>3 658 649</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>2 757 013</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>830 018</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td>733 759</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 058 931</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td>113.267.741</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
