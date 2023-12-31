@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body {
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    text-align: center;
+    width: 400px;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: left;
+}
+
+.aling_center td{
+    text-align: center;
+}
+
+caption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+th, td {
+    padding: 6px;
+    font-size: 1.2em;
+    border: 1px solid black;
+}
+
+.header_container {
+    font-weight: bold;
+    background-color: gray;
+    color: white;
+}
+
+#Exatas {
+    padding: 15px;
+}
+
+.container {
+    text-align: left;
+    font-weight: bold;
+    background-color: gray;
+    color: white;
+}
