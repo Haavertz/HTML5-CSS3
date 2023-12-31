@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            margin: auto;
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border-radius: 10px 10px 0 0;
+        }
+
+        thead tr th {
+            background-color: #383838;
+            color: white;
+        }
+
+        /* Utilizando uma pseudo classe para deixa com o efeito zebrado para ajudar com as coisas. */
+
+        /* Basicamente aqui ele vai pular de 2 e no segundo ele vai aplicar o efeito, podemos fazer com ODD para pegar apenas os impares. Caso eu tire o n do 2n ele vai pega apenas no segundo, com o n ele vai procurar uma sequencia*/
+
+        tbody tr:nth-child(odd) { /* 2n - 1 */
+            background-color: lightgray;
+            font-weight: 200;
+        }
+
+        /* O even e a mesma coisa que o odd porem ele vai pegar apenas os pares */
+
+        tbody tr:nth-child(even) { /* 2n */
+            background-color: lightcyan;
+        }
+
+        thead th {
+            background-color: #383838;
+            position: sticky;
+            top: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes e Manter A posicao do Estado e Populacao Absoluta e fixada</h1>
+
+    <!-- Anatomia de tabelas grandes  -->
+
+    <!-- TABLE 
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH -->
+
+        <!-- TH seria os titulos e TD serao os dados -->
+
+    <table>
+        <!-- Legenda da tabela -->
+        <caption>Populacao das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Populacao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>3 302 729</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td>1 581 196</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>2 210 004</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td>1 511 460</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>3 271 199</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>3 658 649</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>2 757 013</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>830 018</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td>733 759</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 058 931</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>6 574 789</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>3 168 027</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>450 479</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>3 514 952</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>6 248 436</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td>133.224.424</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Isto serve para vc desce e percebe que a posicao fixada da tabela só funciona nela e n fora! -->
+
+    <p style="padding-top: 150px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus maiores cupiditate ratione itaque, voluptatem debitis perspiciatis explicabo doloribus porro at consectetur doloremque exercitationem, officia repellendus iste ipsum. Temporibus, dolore non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia voluptates, velit reprehenderit iure mollitia soluta, nam corporis temporibus aperiam inventore assumenda. Impedit delectus aliquam nihil sunt quibusdam repellat quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis fuga quasi iure sint ullam reprehenderit nam molestiae quam? Explicabo labore, quis voluptatum maxime incidunt nam a quisquam magnam itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, minus! Ea sint veniam alias sunt dolorum adipisci quod, illo voluptate velit cum molestiae enim minus labore aperiam praesentium nihil perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, accusamus? Quo alias iure aliquam impedit in enim minima voluptatem magnam excepturi debitis eius reprehenderit aut, delectus asperiores fugit similique! Sequi?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus maiores cupiditate ratione itaque, voluptatem debitis perspiciatis explicabo doloribus porro at consectetur doloremque exercitationem, officia repellendus iste ipsum. Temporibus, dolore non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia voluptates, velit reprehenderit iure mollitia soluta, nam corporis temporibus aperiam inventore assumenda. Impedit delectus aliquam nihil sunt quibusdam repellat quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis fuga quasi iure sint ullam reprehenderit nam molestiae quam? Explicabo labore, quis voluptatum maxime incidunt nam a quisquam magnam itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, minus! Ea sint veniam alias sunt dolorum adipisci quod, illo voluptate velit cum molestiae enim minus labore aperiam praesentium nihil perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, accusamus? Quo alias iure aliquam impedit in enim minima voluptatem magnam excepturi debitis eius reprehenderit aut, delectus asperiores fugit similique! Sequi?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus maiores cupiditate ratione itaque, voluptatem debitis perspiciatis explicabo doloribus porro at consectetur doloremque exercitationem, officia repellendus iste ipsum. Temporibus, dolore non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia voluptates, velit reprehenderit iure mollitia soluta, nam corporis temporibus aperiam inventore assumenda. Impedit delectus aliquam nihil sunt quibusdam repellat quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis fuga quasi iure sint ullam reprehenderit nam molestiae quam? Explicabo labore, quis voluptatum maxime incidunt nam a quisquam magnam itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, minus! Ea sint veniam alias sunt dolorum adipisci quod, illo voluptate velit cum molestiae enim minus labore aperiam praesentium nihil perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, accusamus? Quo alias iure aliquam impedit in enim minima voluptatem magnam excepturi debitis eius reprehenderit aut, delectus asperiores fugit similique! Sequi?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus maiores cupiditate ratione itaque, voluptatem debitis perspiciatis explicabo doloribus porro at consectetur doloremque exercitationem, officia repellendus iste ipsum. Temporibus, dolore non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia voluptates, velit reprehenderit iure mollitia soluta, nam corporis temporibus aperiam inventore assumenda. Impedit delectus aliquam nihil sunt quibusdam repellat quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis fuga quasi iure sint ullam reprehenderit nam molestiae quam? Explicabo labore, quis voluptatum maxime incidunt nam a quisquam magnam itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, minus! Ea sint veniam alias sunt dolorum adipisci quod, illo voluptate velit cum molestiae enim minus labore aperiam praesentium nihil perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, accusamus? Quo alias iure aliquam impedit in enim minima voluptatem magnam excepturi debitis eius reprehenderit aut, delectus asperiores fugit similique! Sequi?</p>
+ 
+</body>
+</html>
