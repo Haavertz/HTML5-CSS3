@@ -3,6 +3,7 @@ body {
 }
 
 main {
+    display: flex;
     margin: auto;
     position: absolute;
     top: 50%;
@@ -24,11 +25,38 @@ main {
     background-color: rgb(23, 132, 127);
 }
 
+.block2 {
+    width: 100px;
+    height: 100px;
+    margin: 0 0 0 20px;
+    background-color: lightseagreen;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.block2:hover {
+    animation: string 2.5s infinite;
+    background-color: rgb(23, 132, 127);
+}
+
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(260deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes string {
+    0% {
+        transform: scale(0px);
+    }
+
+    100% {
+        width: 70px;
+        height: 85px;
+
     }
 }
